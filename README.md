@@ -17,7 +17,7 @@
 	├── README.md
 	├── node_modules/
 	├── build
-	│   └── build.js
+	│   └── bundle.js
 	├── index.html
 	├── package.json
 	├── public
@@ -30,13 +30,16 @@
 	│       ├── setting.vue
 	│       └── signup.vue
 	└── webpack.config.js
+	
+1. `Gruntfile.js`配置了`grunt-contrib-watch`插件，实现监听文件变化并自动刷新重载。
+2. `webpack.config.js`入口文件为`./src/main.js`，输出文件为`./build/bundle.js`
 
 ## 用法
 
-`npm install`安装依赖
+1. `npm install`安装依赖
 
-`npm run dev`使用webpack构建
+2. `npm run dev`使用webpack构建
 
-`python -m SimpleHTTPServer`(默认8000端口) 或者通过`webpack-dev-server`（默认8080端口）开启静态服务器
+3. `python -m SimpleHTTPServer`(需要python，默认8000端口) 或者通过`webpack-dev-server`（需要安装`webpack-dev-server`，默认8080端口）开启静态服务器
 
-visit <http://127.0.0.1:8000>或者<http://127.0.0.1:8080>
+4. 访问 <http://127.0.0.1:8000>或者<http://127.0.0.1:8080>
