@@ -1,13 +1,13 @@
 <style>
 li { list-style: none; float: left; margin-right: 2em;}
+.current-route {padding: 40px;}
 </style>
 <template>
-	<div class="container">
 		<ul>
 			<li v-repeat="routes" v-on="click: goTo($value)">{{$value}}</li>
 		</ul>
-		<div v-component="{{view.current_route}}"></div>
-	</div>
+		<br>
+		<div class="current-route" v-component="{{view.current_route}}"></div>
 </template>
 
 <script>
