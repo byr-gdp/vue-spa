@@ -40,6 +40,10 @@
 
 2. `npm run dev`使用webpack构建
 
-3. `python -m SimpleHTTPServer`(需要python，默认8000端口) 或者通过`webpack-dev-server`（需要安装`webpack-dev-server`，默认8080端口）开启静态服务器
+3. `python -m SimpleHTTPServer`(需要python，默认8000端口) 或者通过`webpack-dev-server`（需要安装`webpack-dev-server`，默认8080端口）开启静态服务器，或者nginx
 
-4. 访问 <http://127.0.0.1:8000>或者<http://127.0.0.1:8080>
+4. `grunt`，当前`Gruntfile.js`只配置了`grunt-contrib-watch`，实现监听文件变化并自动刷新
+
+5. `webpack --watch`，监视文件变化，并重新生成`bundle.js`
+
+6. 访问 <http://127.0.0.1:8000>或者<http://127.0.0.1:8080>或者nginx配置的其他端口
