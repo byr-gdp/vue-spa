@@ -1,5 +1,7 @@
 # vue-spa
 
+当前使用的 vue 版本为0.12，自1.0发布以后 API 有较大改动，你可以参考 [vue-starter](https://github.com/byr-gdp/vue-starter)。
+
 ## 简介
 
 基于vue的单页面应用（SPA）脚手架，是对近期学习如何用vue构建大型应用的总结，希望能帮助更多像我一样的初学者。
